@@ -11,24 +11,26 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
-      imagen: {
+      image: {
         type: Sequelize.STRING
       },
-      edad: {
+      age: {
         type: Sequelize.INTEGER
       },
-      peso: {
+      weight: {
         type: Sequelize.FLOAT
       },
-      historia: {
+      story: {
         type: Sequelize.TEXT
       },
-      pelicula_id: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: 'movie',
-          key: 'id'
-        }
+      movie_id: {
+        type: Sequelize.INTEGER
+      },
+      createdAt: {
+        type: Sequelize.DATE
+      },
+      updatedAt: {
+        type: Sequelize.DATE
       },
       createdAt: {
         allowNull: false,
